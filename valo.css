@@ -1,0 +1,389 @@
+
+
+
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(maisema.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ 
+}
+
+h1{ 
+  width: 100%;
+  position: static;
+  color: rgb(255, 230, 2);
+  padding: 15px;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 3px 3px 5px white;
+  font-size: 50px;
+  
+  
+
+}
+
+ul{
+    list-style: none;
+    padding: 50px;
+    margin: 0 0 0 700px;
+    
+}
+
+li{
+    float: left;
+    
+
+}
+
+li a{
+    display: block;
+    padding: 40px 10px;
+    text-align: center;
+    width: 200px;
+    color: rgb(255, 230, 2);
+    font-size: 20px;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace
+    
+
+}
+
+
+
+
+nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1px;
+    
+}
+
+
+ul li a:hover {
+    border: 3px solid aliceblue;
+    overflow: hidden;  
+    height: 30px;
+    width: 135px;
+    border-radius: 80%;
+    transition: 1s;
+
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 70%;
+    
+    
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    
+  }
+
+
+   /* Instagram */
+   .fa-instagram {
+    background: #fffb04;
+    color: rgb(233, 58, 58);
+    
+  }
+
+  .fa-youtube {
+    color:red;
+    background: white;
+    
+    
+  }
+
+  
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 1px;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #fff460;
+  padding: 10px 30px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 15px; /* Important for vertical align on mobile phones */
+  text-shadow: 1px 1px 2px aliceblue;
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+background-color: beige;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: rgb(255, 73, 1);
+}
+ 
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.slider{
+  width: 1000px;
+  height: 600px;
+  background: url(nature2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  border: 4px solid aliceblue;
+  animation: slide 20s infinite;
+
+}
+
+@keyframes slide{
+  25%{
+    background: url(nature3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50%{
+    background: url(nature4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  75%{
+    background: url(nature5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100%{
+    background: url(nature6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.box
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1200px;
+  height: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px #fff460;
+  display: flex;
+  transition: 0.5s;
+}
+
+.box:hover
+{
+  box-shadow: 0 20px 40px #fff460;
+}
+
+.box .imgBx
+{
+  width: 300px;
+  flex: 0 0 400px;
+}
+
+.box .imgBx img
+{
+  max-width: 100%;
+  height: 550px;
+}
+
+.box .dropdown-content
+{
+  padding-left: 20px;
+}
+
+.box .content h2
+{
+  margin: 10px;
+  padding-left: 0;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box .content p
+{
+  margin: 20px;
+  padding: 50px 0 0;
+  text-align: center;
+  font-size: 22px;
+  font-family:"Lucida Console", "Courier New", Monaco;
+}
+
+
+::selection{
+  background: #fff460;;
+}
+.wrapper{
+  max-width: 800px;
+  height: 600px;
+  padding: 0 50px;
+  margin-left: 500px;
+  margin-top: 100px;
+  
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  background: #f3eb81;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.wrapper .parent-tab label:hover{
+  background: #fff460;;
+}
+.parent-tab input:checked ~ label,
+.child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: #fff460;;
+}
+.wrapper label span{
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
+ 
+  
+}
+.wrapper .child-tab label span{
+  font-size: 20px;
+}
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  color: #007bff;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 20px;
+}
+.child-tab .sub-content p{
+  font-size: 23px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
